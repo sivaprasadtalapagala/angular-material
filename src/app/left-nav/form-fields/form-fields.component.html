@@ -1,13 +1,15 @@
 <div class="container">
     <h2>Form</h2>
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
-      <mat-form-field appearance="outline">
-        <mat-label>Input Field</mat-label>
-        <input matInput formControlName="inputField">
-        <mat-error *ngIf="form.controls.inputField.hasError('required')">Input field is required</mat-error>
-      </mat-form-field>
+     <div class="form-field">
+        <mat-form-field appearance="outline">
+            <mat-label>Input Field</mat-label>
+            <input matInput formControlName="inputField">
+            <mat-error *ngIf="form.controls.inputField.hasError('required')">Input field is required</mat-error>
+          </mat-form-field>
+     </div>
   
-      <div>
+      <div  class="form-field">
         <mat-label>Radio Buttons</mat-label>
         <mat-radio-group formControlName="radioButton">
           <mat-radio-button value="option1">Option 1</mat-radio-button>
@@ -16,10 +18,10 @@
         </mat-radio-group>
       </div>
   
-      <mat-checkbox formControlName="checkBox">Check Box</mat-checkbox>
+      <mat-checkbox formControlName="checkBox"  class="form-field">Check Box</mat-checkbox>
   
-      <mat-slide-toggle formControlName="toggleButton">Toggle Button</mat-slide-toggle>
-  
+      <mat-slide-toggle formControlName="toggleButton"  class="form-field">Toggle Button</mat-slide-toggle>
+   <div  class="form-field">
       <mat-form-field appearance="outline">
         <mat-label>Select Field</mat-label>
         <mat-select formControlName="selectField">
@@ -29,13 +31,15 @@
         </mat-select>
         <mat-error *ngIf="form.controls.selectField.hasError('required')">Select field is required</mat-error>
       </mat-form-field>
-  
+    </div>
+    <div class="form-field">
       <mat-form-field appearance="outline">
         <mat-label>Text Area</mat-label>
         <textarea matInput rows="4" formControlName="textArea"></textarea>
         <mat-error *ngIf="form.controls.textArea.hasError('required')">Text area is required</mat-error>
       </mat-form-field>
-  
+    </div>
+    <div class="form-field">
       <mat-form-field appearance="outline">
         <mat-label>Auto Complete Field</mat-label>
         <input matInput formControlName="autoComplete" [matAutocomplete]="auto">
@@ -46,7 +50,7 @@
         </mat-autocomplete>
         <mat-error *ngIf="form.controls.autoComplete.hasError('required')">Auto complete field is required</mat-error>
       </mat-form-field>
-  
+    </div>
       <button mat-raised-button color="primary" type="submit">Submit</button>
     </form>
   </div>
