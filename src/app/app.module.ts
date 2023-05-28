@@ -19,6 +19,13 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
+import { LeftNavComponent } from './left-nav/left-nav.component';
+//left nav
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { DashboardComponent } from './left-nav/dashboard/dashboard.component';
+import { InboxComponent } from './left-nav/inbox/inbox.component';
+import { SettingsComponent } from './left-nav/settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +33,11 @@ import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
     MaterialBasicsComponent,
     PageNotFoundComponent,
     MCardsComponent,
-    AutoCompleteComponent
+    AutoCompleteComponent,
+    LeftNavComponent,
+    DashboardComponent,
+    InboxComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +53,11 @@ import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
     MatAutocompleteModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    //left nav
+    MatSidenavModule,
+    MatListModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
