@@ -26,7 +26,13 @@ import { MatListModule } from '@angular/material/list';
 import { DashboardComponent } from './left-nav/dashboard/dashboard.component';
 import { InboxComponent } from './left-nav/inbox/inbox.component';
 import { SettingsComponent } from './left-nav/settings/settings.component';
-
+import { LoginComponent } from './left-nav/login/login.component';
+import { FormFieldsComponent } from './left-nav/form-fields/form-fields.component';
+//formfields
+import { MatRadioModule } from '@angular/material/radio';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSelectModule } from '@angular/material/select';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +44,8 @@ import { SettingsComponent } from './left-nav/settings/settings.component';
     DashboardComponent,
     InboxComponent,
     SettingsComponent,
+    LoginComponent,
+    FormFieldsComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,7 +64,13 @@ import { SettingsComponent } from './left-nav/settings/settings.component';
     ReactiveFormsModule,
     //left nav
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    //formfields
+    MatRadioModule,
+    MatCheckboxModule,
+    MatSlideToggleModule,
+    MatSelectModule
+    
     
   ],
   providers: [],

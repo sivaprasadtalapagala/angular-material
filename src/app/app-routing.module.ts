@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 import { DashboardComponent } from './left-nav/dashboard/dashboard.component';
+import { FormFieldsComponent } from './left-nav/form-fields/form-fields.component';
 import { InboxComponent } from './left-nav/inbox/inbox.component';
 import { LeftNavComponent } from './left-nav/left-nav.component';
+import { LoginComponent } from './left-nav/login/login.component';
 import { SettingsComponent } from './left-nav/settings/settings.component';
 import { MCardsComponent } from './m-cards/m-cards.component';
 import { MaterialBasicsComponent } from './material-basics/material-basics.component';
@@ -33,6 +35,14 @@ const routes: Routes = [
     {
       path: 'settings',
       component: SettingsComponent
+    },
+    {
+      path: 'login',
+      component: LoginComponent
+    },
+    {
+      path: 'formfields',
+      component: FormFieldsComponent
     }
   ]},
   {path:'**', component:PageNotFoundComponent}

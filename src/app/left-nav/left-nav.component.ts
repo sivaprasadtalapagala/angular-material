@@ -21,4 +21,10 @@ export class LeftNavComponent {
   goToSettings(){
     this.router.navigate(['leftnav/settings'])
   }
+  goToLogin(){
+    this.router.navigate(['leftnav/login'])
+  }
+  goToformfields(){
+    this.router.navigate(['leftnav/formfields'])
+  }
 }
