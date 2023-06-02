@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
+import { CkeditorComponent } from './left-nav/ckeditor/ckeditor.component';
 import { DashboardComponent } from './left-nav/dashboard/dashboard.component';
 import { DatepickerComponent } from './left-nav/datepicker/datepicker.component';
 import { FormFieldsComponent } from './left-nav/form-fields/form-fields.component';
@@ -48,6 +49,10 @@ const routes: Routes = [
     {
       path:'datepicker',
       component:DatepickerComponent
+    },
+    {
+      path:'ckeditor',
+      component:CkeditorComponent
     }
   ]},
   {path:'**', component:PageNotFoundComponent}

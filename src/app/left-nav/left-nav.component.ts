@@ -30,4 +30,7 @@ export class LeftNavComponent {
   goToDatepicker(){
     this.router.navigate(['leftnav/datepicker'])
   }
+  goToCkeditor(){
+    this.router.navigate(['leftnav/ckeditor'])
+  }
 }

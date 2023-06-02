@@ -44,6 +44,11 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 // import {CdkDrag} from '@angular/cdk/drag-drop';
 import {CdkDropList, CdkDrag} from '@angular/cdk/drag-drop';
 import {NgFor} from '@angular/common';
+// import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import { CKEditorModule } from 'ckeditor4-angular';
+import { CkeditorComponent } from './left-nav/ckeditor/ckeditor.component';
+
+
 
 
 @NgModule({
@@ -60,6 +65,7 @@ import {NgFor} from '@angular/common';
     LoginComponent,
     FormFieldsComponent,
     DatepickerComponent,
+    CkeditorComponent,
   ],
   imports: [
     BrowserModule,
@@ -93,7 +99,8 @@ import {NgFor} from '@angular/common';
     //drag and drop
     CdkDrag,
     CdkDropList,
-    NgFor
+    NgFor,
+    CKEditorModule
     
     
   ],
