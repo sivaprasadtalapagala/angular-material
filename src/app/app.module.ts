@@ -33,6 +33,19 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSelectModule } from '@angular/material/select';
+//datepicker
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+import { DatepickerComponent } from './left-nav/datepicker/datepicker.component';
+import {MatTabsModule} from '@angular/material/tabs';
+//progress bqar
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+//drag and drop
+// import {CdkDrag} from '@angular/cdk/drag-drop';
+import {CdkDropList, CdkDrag} from '@angular/cdk/drag-drop';
+import {NgFor} from '@angular/common';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +59,7 @@ import { MatSelectModule } from '@angular/material/select';
     SettingsComponent,
     LoginComponent,
     FormFieldsComponent,
+    DatepickerComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,7 +83,17 @@ import { MatSelectModule } from '@angular/material/select';
     MatRadioModule,
     MatCheckboxModule,
     MatSlideToggleModule,
-    MatSelectModule
+    MatSelectModule,
+    //date picker
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatTabsModule,
+    //progress bar
+    MatProgressBarModule,
+    //drag and drop
+    CdkDrag,
+    CdkDropList,
+    NgFor
     
     
   ],

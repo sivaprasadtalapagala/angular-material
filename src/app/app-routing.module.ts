@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
 import { DashboardComponent } from './left-nav/dashboard/dashboard.component';
+import { DatepickerComponent } from './left-nav/datepicker/datepicker.component';
 import { FormFieldsComponent } from './left-nav/form-fields/form-fields.component';
 import { InboxComponent } from './left-nav/inbox/inbox.component';
 import { LeftNavComponent } from './left-nav/left-nav.component';
@@ -43,6 +44,10 @@ const routes: Routes = [
     {
       path: 'formfields',
       component: FormFieldsComponent
+    },
+    {
+      path:'datepicker',
+      component:DatepickerComponent
     }
   ]},
   {path:'**', component:PageNotFoundComponent}

@@ -1,0 +1,55 @@
+ 
+ <h3 class="text-center fw-bold">Date picker</h3>
+ <mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker" (dateChange)="onDateChange($event)">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  
+
+
+
+  <h3 class="text-center fw-bold">Tabs</h3>
+  <mat-tab-group>
+    <mat-tab label="First"> Content 1 </mat-tab>
+    <mat-tab label="Second"> Content 2 </mat-tab>
+    <mat-tab label="Third"> Content 3 </mat-tab>
+  </mat-tab-group>
+
+
+  <h4 class="text-center fw-bold">Basic mat-select</h4>
+<mat-form-field>
+  <mat-label>Favorite food</mat-label>
+  <mat-select (selectionChange)="onSelectionChange($event)" >
+    <mat-option *ngFor="let food of foods" [value]="food.value">
+      {{food.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field> 
+
+
+
+<h4 class="text-center fw-bold">Intermediate Progress bar</h4>
+<mat-progress-bar mode="indeterminate"></mat-progress-bar>
+<h4 class="text-center fw-bold">determinate Progress bar</h4>
+<mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
+<h4 class="text-center fw-bold">Buffer Progress bar</h4>
+<mat-progress-bar mode="buffer"></mat-progress-bar>
+
+
+<h4 class="text-center fw-bold">Basic Drag and drop</h4>
+<div class="example-box btn btn-primary p-4" cdkDrag>
+  Drag me around
+</div>
+
+
+<h4 class="text-center fw-bold">Drag and drop </h4>
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+  <div class="example-box" *ngFor="let movie of movies" cdkDrag>{{movie}}</div>
+</div>
+
+
+
+  

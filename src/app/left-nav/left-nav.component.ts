@@ -27,4 +27,7 @@ export class LeftNavComponent {
   goToformfields(){
     this.router.navigate(['leftnav/formfields'])
   }
+  goToDatepicker(){
+    this.router.navigate(['leftnav/datepicker'])
+  }
 }
