@@ -47,6 +47,7 @@ import {NgFor} from '@angular/common';
 // import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { CKEditorModule } from 'ckeditor4-angular';
 import { CkeditorComponent } from './left-nav/ckeditor/ckeditor.component';
+import { LodashComponent } from './left-nav/lodash/lodash.component';
 
 
 
@@ -66,6 +67,7 @@ import { CkeditorComponent } from './left-nav/ckeditor/ckeditor.component';
     FormFieldsComponent,
     DatepickerComponent,
     CkeditorComponent,
+    LodashComponent,
   ],
   imports: [
     BrowserModule,

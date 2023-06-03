@@ -33,4 +33,7 @@ export class LeftNavComponent {
   goToCkeditor(){
     this.router.navigate(['leftnav/ckeditor'])
   }
+  goToLodash(){
+    this.router.navigate(['leftnav/lodash'])
+  }
 }

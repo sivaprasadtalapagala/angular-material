@@ -7,6 +7,7 @@ import { DatepickerComponent } from './left-nav/datepicker/datepicker.component'
 import { FormFieldsComponent } from './left-nav/form-fields/form-fields.component';
 import { InboxComponent } from './left-nav/inbox/inbox.component';
 import { LeftNavComponent } from './left-nav/left-nav.component';
+import { LodashComponent } from './left-nav/lodash/lodash.component';
 import { LoginComponent } from './left-nav/login/login.component';
 import { SettingsComponent } from './left-nav/settings/settings.component';
 import { MCardsComponent } from './m-cards/m-cards.component';
@@ -53,6 +54,10 @@ const routes: Routes = [
     {
       path:'ckeditor',
       component:CkeditorComponent
+    },
+    {
+      path:'lodash',
+      component:LodashComponent
     }
   ]},
   {path:'**', component:PageNotFoundComponent}
