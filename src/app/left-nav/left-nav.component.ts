@@ -39,4 +39,7 @@ export class LeftNavComponent {
   goToaggrid(){
     this.router.navigate(['leftnav/agGrid'])
   }
+  goToPrimeng(){
+    this.router.navigate(['leftnav/primeng'])
+  }
 }

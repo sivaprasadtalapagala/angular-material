@@ -52,7 +52,11 @@ import { LodashComponent } from './left-nav/lodash/lodash.component';
 //ag grid
 import { AgGridModule } from 'ag-grid-angular';
 import { AgGridComponent } from './left-nav/ag-grid/ag-grid.component';
+import { PrimengComponent } from './left-nav/primeng/primeng.component';
 
+//primeng
+import { ButtonModule } from 'primeng/button';
+import { AutoCompleteModule } from 'primeng/autocomplete';
 
 
 
@@ -73,6 +77,7 @@ import { AgGridComponent } from './left-nav/ag-grid/ag-grid.component';
     CkeditorComponent,
     LodashComponent,
     AgGridComponent,
+    PrimengComponent,
   ],
   imports: [
     BrowserModule,
@@ -108,7 +113,9 @@ import { AgGridComponent } from './left-nav/ag-grid/ag-grid.component';
     CdkDropList,
     NgFor,
     CKEditorModule,
-    AgGridModule
+    AgGridModule,
+    ButtonModule,
+    AutoCompleteModule
     
     
   ],

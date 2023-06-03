@@ -10,6 +10,7 @@ import { InboxComponent } from './left-nav/inbox/inbox.component';
 import { LeftNavComponent } from './left-nav/left-nav.component';
 import { LodashComponent } from './left-nav/lodash/lodash.component';
 import { LoginComponent } from './left-nav/login/login.component';
+import { PrimengComponent } from './left-nav/primeng/primeng.component';
 import { SettingsComponent } from './left-nav/settings/settings.component';
 import { MCardsComponent } from './m-cards/m-cards.component';
 import { MaterialBasicsComponent } from './material-basics/material-basics.component';
@@ -63,6 +64,10 @@ const routes: Routes = [
     {
       path:'agGrid',
       component:AgGridComponent
+    },
+    {
+      path:'primeng',
+      component:PrimengComponent
     }
   ]},
   {path:'**', component:PageNotFoundComponent}
