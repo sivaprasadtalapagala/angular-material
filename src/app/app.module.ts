@@ -47,7 +47,11 @@ import {NgFor} from '@angular/common';
 // import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { CKEditorModule } from 'ckeditor4-angular';
 import { CkeditorComponent } from './left-nav/ckeditor/ckeditor.component';
+//lodash
 import { LodashComponent } from './left-nav/lodash/lodash.component';
+//ag grid
+import { AgGridModule } from 'ag-grid-angular';
+import { AgGridComponent } from './left-nav/ag-grid/ag-grid.component';
 
 
 
@@ -68,6 +72,7 @@ import { LodashComponent } from './left-nav/lodash/lodash.component';
     DatepickerComponent,
     CkeditorComponent,
     LodashComponent,
+    AgGridComponent,
   ],
   imports: [
     BrowserModule,
@@ -102,7 +107,8 @@ import { LodashComponent } from './left-nav/lodash/lodash.component';
     CdkDrag,
     CdkDropList,
     NgFor,
-    CKEditorModule
+    CKEditorModule,
+    AgGridModule
     
     
   ],

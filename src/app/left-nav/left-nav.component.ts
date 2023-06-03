@@ -36,4 +36,7 @@ export class LeftNavComponent {
   goToLodash(){
     this.router.navigate(['leftnav/lodash'])
   }
+  goToaggrid(){
+    this.router.navigate(['leftnav/agGrid'])
+  }
 }

@@ -1,0 +1,40 @@
+<!-- <ag-grid-angular 
+	style="width: 500px; height: 500px;" 
+	class="ag-theme-alpine"
+	[rowData]="rowData" 
+	[columnDefs]="columnDefs">
+</ag-grid-angular> -->
+
+<h2 class="p-3 text-blue">second example</h2>
+<!-- <ag-grid-angular
+      style="width: 100%; height: 500px;"
+      class="ag-theme-alpine"
+      [columnDefs]="columnDefs"
+      [rowData]="rowData"
+      [pagination]="true"
+      [paginationPageSize]="10"
+      [rowSelection]="'multiple'"
+      (selectionChanged)="onSelectionChanged()"
+    ></ag-grid-angular>
+    <button (click)="deleteRows()" [disabled]="selectedRows.length === 0">Delete Selected Rows</button> -->
+
+
+
+	<h2 class="p-3 text-blue">Third example</h2>
+
+	<div>
+		<input type="checkbox" (change)="toggleFilter('name')" checked />Name
+		<input type="checkbox" (change)="toggleFilter('age')" checked />Age
+		<input type="checkbox" (change)="toggleFilter('email')" checked />Email
+	  </div>
+	  <ag-grid-angular
+		style="width: 100%; height: 500px;"
+		class="ag-theme-alpine"
+		[columnDefs]="columnDefs"
+		[rowData]="rowData"
+		[pagination]="true"
+		[paginationPageSize]="10"
+		[rowSelection]="'multiple'"
+		(selectionChanged)="onSelectionChanged()"
+	  ></ag-grid-angular>
+	  <button (click)="deleteRows()" [disabled]="selectedRows.length === 0">Delete Selected Rows</button>

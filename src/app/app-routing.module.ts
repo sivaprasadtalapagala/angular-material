@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
+import { AgGridComponent } from './left-nav/ag-grid/ag-grid.component';
 import { CkeditorComponent } from './left-nav/ckeditor/ckeditor.component';
 import { DashboardComponent } from './left-nav/dashboard/dashboard.component';
 import { DatepickerComponent } from './left-nav/datepicker/datepicker.component';
@@ -58,6 +59,10 @@ const routes: Routes = [
     {
       path:'lodash',
       component:LodashComponent
+    },
+    {
+      path:'agGrid',
+      component:AgGridComponent
     }
   ]},
   {path:'**', component:PageNotFoundComponent}
